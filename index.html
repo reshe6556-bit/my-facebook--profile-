@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Facebook Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .container {
+      background: white;
+      max-width: 420px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    h1, h2 {
+      color: #1877f2;
+    }
+
+    p {
+      font-size: 14px;
+      color: #333;
+    }
+
+    img.cover {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .button {
+      display: block;
+      margin: 10px 0;
+      padding: 12px;
+      background: #1877f2;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    .whatsapp {
+      background: #25D366;
+    }
+
+    .post {
+      background: #f7f7f7;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 6px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      background: #1877f2;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HOME -->
+  <h1>Welcome to Our Facebook Page</h1>
+
+  <img class="cover"
+       src="https://via.placeholder.com/420x160.png?text=Facebook+Cover"
+       alt="Cover Image">
+
+  <p>
+    This is our official community Facebook page website.
+    We share updates, news, and important information.
+  </p>
+
+  <a class="button"
+     href="https://www.facebook.com/profile.php?id=61583209354362"
+     target="_blank">
+    🔵 Visit Facebook Page
+  </a>
+
+  <a class="button whatsapp"
+     href="https://wa.me/8801322301864"
+     target="_blank">
+    💬 Contact on WhatsApp
+  </a>
+
+  <!-- ABOUT -->
+  <h2>About Us</h2>
+  <p>
+    We are a community-based Facebook page created to help,
+    inform, and connect people through trusted information
+    and updates.
+  </p>
+
+  <!-- UPDATES -->
+  <h2>Recent Updates</h2>
+
+  <div class="post">
+    <h3>📌 Community Notice</h3>
+    <p>Important community announcements will be posted here.</p>
+  </div>
+
+  <div class="post">
+    <h3>📢 Latest News</h3>
+    <p>Follow our Facebook page to stay updated.</p>
+  </div>
+
+  <!-- CONTACT -->
+  <h2>Contact Us</h2>
+
+  <form onsubmit="sendMessage(); return false;">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="text" id="message" placeholder="Your Message" required>
+    <button type="submit">Send Message on WhatsApp</button>
+  </form>
+
+  <p>or</p>
+
+  <a class="button" href="mailto:reshe6556@gmail.com">
+    📧 Email: reshe6556@gmail.com
+  </a>
+
+  <footer>
+    © 2026 My Facebook Page. All rights reserved.
+  </footer>
+
+</div>
+
+<script>
+function sendMessage() {
+  var name = document.getElementById("name").value;
+  var message = document.getElementById("message").value;
+  var phone = "8801322301864";
+
+  var text = "Name: " + name + "%0A" + "Message: " + message;
+  var url = "https://wa.me/" + phone + "?text=" + text;
+
+  window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
